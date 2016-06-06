@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alejandra.soccer_rules.MainActivity"
+    android:weightSum="1"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TARJETA PENAL"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ed0f0f"
+            android:paddingTop="20dp"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="148dp"
+            android:id="@+id/imageView"
+            android:background="@drawable/escudo12"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduzca el nombre del jugador"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#06105e"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_nombre"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="buscar"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="68dp"
+            android:id="@+id/image_rojo"
+            android:background="@drawable/rojo"
+            android:onClick="Image_rojo"/>
+
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="match_parent"
+            android:id="@+id/image_amarillo"
+            android:background="@drawable/amarillo"
+            android:onClick="Image_amarillo"/>
+    </LinearLayout>
+
+</LinearLayout>
